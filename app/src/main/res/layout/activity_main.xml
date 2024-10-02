@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity"
+    android:background="@color/grisFondo"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:title=" "
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/icono_nombre"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:id="@+id/img_linea"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/shape_toolbar"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/toolbar"
+        />
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/img_linea"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:id="@+id/tv_conexion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No tienes conexion a internet."
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        />
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomAppBar"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/white"
+
+            >
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bottom_navigation"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/bottom_navigation_menu"
+                android:background="@android:color/transparent"
+                app:itemTextColor="@color/bottom_nav_selector"
+                app:itemActiveIndicatorStyle="@color/letter_color"
+                app:itemIconTint="@color/bottom_nav_selector"
+                app:itemRippleColor="@android:color/transparent"
+
+                />
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

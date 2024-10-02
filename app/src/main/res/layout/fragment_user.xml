@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.UserFragment"
+    android:background="@color/grisFondo">
+
+    <RelativeLayout
+        android:id="@+id/rl_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    <TextView
+        android:id="@+id/tv_nombreusuarioUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Nombre Usuario"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="20sp"
+
+        />
+    <TextView
+        android:id="@+id/tv_emailusuarioUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_nombreusuarioUser"
+        android:text="Email Usuario"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/tv_nombregim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/tv_emailusuarioUser"
+        android:textSize="20sp"
+        android:text="Gimnasios Favoritos"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto_mediumitalic"
+        android:layout_marginTop="50dp"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/UserRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/tv_nombregim"
+
+
+        />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_no_favorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No hay gimnasios favoritos"
+        android:visibility="gone"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+</RelativeLayout>

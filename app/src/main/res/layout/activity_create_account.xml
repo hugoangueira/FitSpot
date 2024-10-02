@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CreateAccount_Activity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/crear_cuenta"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginStart="50dp"
+        android:textSize="17sp"
+        android:textColor="@color/letter_color"
+        />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:focusableInTouchMode="true"
+
+        >
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/fondo_redondo" />
+
+        <EditText
+            android:id="@+id/edt_newemail"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="@color/hint_color"
+            android:fontFamily="@font/roboto"
+            android:ems="9"
+            android:textSize="18sp"
+            android:foregroundTint="@android:color/white"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dp"
+            android:paddingRight="35dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_color" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginStart="50dp"
+        android:textSize="17sp"
+        android:textColor="@color/letter_color"
+        android:layout_marginTop="10dp"
+        />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/fondo_redondo" />
+
+        <EditText
+            android:id="@+id/edt_new_contraseña"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="2dp"
+            android:backgroundTint="@color/hint_color"
+            android:fontFamily="@font/roboto"
+            android:textSize="18sp"
+            android:ems="9"
+            android:foregroundTint="@android:color/white"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            android:paddingRight="35dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_color" />
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre usuario"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginStart="50dp"
+        android:textSize="17sp"
+        android:textColor="@color/letter_color"
+        android:layout_marginTop="10dp"
+        />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/fondo_redondo" />
+
+        <EditText
+            android:id="@+id/edt_nuevoUsuario"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginTop="2dp"
+            android:textSize="18sp"
+            android:backgroundTint="@color/hint_color"
+            android:fontFamily="@font/roboto"
+            android:ems="10"
+            android:foregroundTint="@android:color/white"
+            android:inputType="text"
+            android:paddingStart="5dp"
+            android:paddingEnd="35dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_color" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|center_horizontal"
+        >
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fondo_mapa2"
+            android:layout_gravity="bottom"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp">
+            <Button
+                android:id="@+id/btn_cancelar"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                style="@style/Buttoncrear"
+                />
+            <Button
+                android:id="@+id/btn_crear"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Crear"
+                style="@style/Buttoncrear"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

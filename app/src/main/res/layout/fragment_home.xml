@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HomeFragment"
+    android:background="@color/grisFondo"
+
+    >
+  <RelativeLayout
+      android:id="@+id/rl_home"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="visible">
+  <RelativeLayout
+      android:id="@+id/filtrar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="5dp"
+      android:gravity="center_horizontal"
+      android:layout_marginStart="10dp"
+      android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_redondo" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/lupa"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+
+        />
+    <AutoCompleteTextView
+        android:id="@+id/edt_filtrar"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@android:color/white"
+        android:fontFamily="@font/roboto"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:foregroundTint="@android:color/white"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"
+        android:hint="Buscar gimnasio"
+        android:paddingEnd="35dp"
+        android:textColorHint="@color/hint_color" />
+    <ImageView
+        android:id="@+id/btn_filtrar"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:src="@drawable/filtrar"
+        android:layout_toEndOf="@id/imageView7"
+        android:layout_marginStart="15dp"
+        android:layout_centerInParent="true"
+        />
+
+  </RelativeLayout>
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/homeRecyclerView"
+      android:padding="16dp"
+      android:layout_marginBottom="70dp"
+      android:background="@color/grisFondo"
+      android:layout_marginTop="5dp"
+      android:layout_below="@id/filtrar"
+      />
+
+</RelativeLayout>
+  <TextView
+      android:id="@+id/tv_vacio"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="No hay gimnasios para esos filtros"
+      android:textSize="20sp"
+      android:layout_centerInParent="true"
+      android:fontFamily="@font/roboto_bold"
+      android:visibility="gone"
+
+      />
+</RelativeLayout>

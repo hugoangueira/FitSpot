@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.Login_Activity"
+
+    >
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fit_spot"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView10"
+        android:layout_above="@id/fr_login"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/img_login"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="5dp"
+            android:backgroundTint="#EBF1FF"
+            >
+        <RelativeLayout
+            android:id="@+id/rl_form"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+    <RelativeLayout
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/fondo_redondo" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:textSize="17sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/hint_color"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/roboto"
+            android:paddingStart="5dp"
+            android:focusableInTouchMode="true"
+            android:hint="correo"
+            android:textColorHint="@color/hint_color"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/viewsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/email"
+        >
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/fondo_redondo" />
+
+        <EditText
+            android:id="@+id/edt_contraseña"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="72dp"
+            android:textSize="17sp"
+            android:backgroundTint="@color/hint_color"
+            android:inputType="textPassword"
+            android:hint="contraseña"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"/>
+        <ImageView
+            android:id="@+id/img_password"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/passwordnovisible"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="5dp"
+
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/recuperar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/viewsearch">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Contraseña olvidada? "
+            android:fontFamily="@font/roboto_bold"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_recuperarcontraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:text="Recuperar"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/color_enlace" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_iniciarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesion"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/recuperar"
+        style="@style/Button"
+        />
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/fr_login"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fondo_mapa2"
+            android:layout_gravity="bottom"
+            />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No tiene ninguna cuenta?"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_gravity="bottom"
+        />
+    <TextView
+        android:id="@+id/btn_crearCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrarse aquí"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/color_enlace"
+        android:layout_marginStart="5dp"
+        />
+    </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>
