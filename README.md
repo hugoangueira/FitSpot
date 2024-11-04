@@ -1,1 +1,1 @@
-Es un proyecto de Android en el cual se puede ver un amplio directorio de gimnasios en Galicia, con sus respectivas actividades y precios.
+Este proyecto de Android ofrece un amplio directorio de gimnasios en Galicia, proporcionando información detallada sobre sus actividades, servicios y precios. Además, incluye una sección de comentarios que permite a los usuarios compartir opiniones y experiencias de forma totalmente fluida.
